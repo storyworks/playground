@@ -6,6 +6,7 @@ div#root {
   @include full-page;
   margin: 0;
   padding: 0;
+  overflow-x: hidden;
 }
 
 .App {
@@ -17,7 +18,6 @@ div#root {
   &__heading {
     display: flex;
     color: lightgrey;
-    // align-self: flex-start;
   }
 
   &__dev {
@@ -38,11 +38,9 @@ div#root {
 
   &__grid {
     display: flex;
+    flex-direction: column;
     flex-wrap: wrap;
-    width: min-content;
-    // justify-content: center;
-    // grid-template-columns: 500px;
-    // grid-template-rows: 500px;
-    // gap: 20px;
+    width: 90%;
+    max-width: 500px;
   }
 }

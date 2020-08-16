@@ -16,7 +16,13 @@ const Rain = ({ numberOfDrops = 25 }: RainProps) => {
 
   return (
     <div className={bem()}>
-      <div className={bem("verse")}>
+      <div
+        className={bem("verse")}
+        style={{
+          fontSize: `${Math.min(window.innerWidth, 500) / 100 / 3.4}em`,
+          lineHeight: `${Math.min(window.innerWidth, 500) / 1000}em`,
+        }}
+      >
         <p>
           <span>Let my teaching fall like rain</span>
         </p>
