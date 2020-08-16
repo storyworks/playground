@@ -2,8 +2,8 @@ import React, { useState, useRef } from "react";
 import ReactPlayer from "react-player/youtube";
 
 import { createBem } from "~/bem";
-import "./Card.scss";
 import { BufferIcon, MuteIcon, VolumeIcon, ErrorIcon } from "~/assets/images";
+import "./Card.scss";
 // import { isScrolledIntoView } from "~/utils";
 
 interface CardProps {

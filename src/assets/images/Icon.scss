@@ -1,0 +1,43 @@
+.Icon {
+  &__buffer {
+    animation: spin 4s linear infinite;
+  }
+
+  @keyframes spin {
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+
+  &__smallSoundwave {
+    animation: smallWave 1s linear infinite;
+  }
+
+  &__largeSoundwave {
+    animation: largeWave 1s linear infinite;
+  }
+
+  @keyframes smallWave {
+    0% {
+      opacity: 1;
+    }
+    50% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 0;
+    }
+  }
+
+  @keyframes largeWave {
+    0% {
+      opacity: 0;
+    }
+    50% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+}

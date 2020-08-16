@@ -8,6 +8,15 @@ import "./assets/index.scss";
 
 const bem = createBem("App");
 
+const Placeholder = () => (
+  <div
+    style={{
+      backgroundColor: "black",
+      width: "500px",
+    }}
+  />
+);
+
 const Application = () => {
   const data = [
     {
@@ -17,25 +26,11 @@ const Application = () => {
     },
     {
       id: "Deut32:3",
-      content: (
-        <div
-          style={{
-            backgroundColor: "black",
-            width: "500px",
-          }}
-        />
-      ),
+      content: <Placeholder />,
     },
     {
       id: "Deut32:4",
-      content: (
-        <div
-          style={{
-            backgroundColor: "black",
-            width: "500px",
-          }}
-        />
-      ),
+      content: <Placeholder />,
     },
   ];
 

@@ -7,17 +7,17 @@ interface IconProps {
 export const MuteIcon = ({ iconColour }: IconProps) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
-    viewBox="0 0 44 44"
+    viewBox="0 0 40 40"
     x="0px"
     y="0px"
     width="100%"
   >
     <title>mute</title>
     <line
-      x1="27.63"
-      y1="17.18"
-      x2="37.28"
-      y2="26.82"
+      x1="27.87"
+      y1="15.46"
+      x2="36.55"
+      y2="24.14"
       fill="none"
       stroke={iconColour}
       strokeLinecap="round"
@@ -25,10 +25,10 @@ export const MuteIcon = ({ iconColour }: IconProps) => (
       strokeWidth="3px"
     />
     <line
-      x1="37.28"
-      y1="17.18"
-      x2="27.63"
-      y2="26.82"
+      x1="36.55"
+      y1="15.46"
+      x2="27.87"
+      y2="24.14"
       fill="none"
       stroke={iconColour}
       strokeLinecap="round"
@@ -36,7 +36,7 @@ export const MuteIcon = ({ iconColour }: IconProps) => (
       strokeWidth="3px"
     />
     <path
-      d="M12.4,29.08h-2.3a2.7,2.7,0,0,1-2.7-2.7v-8.8a2.7,2.7,0,0,1,2.7-2.7h2.31"
+      d="M 12.4 26.172 h -2.3 a 2.7 2.43 0 0 1 -2.7 -2.43 v -7.92 a 2.7 2.43 0 0 1 2.7 -2.43 h 2.31"
       fill="none"
       stroke={iconColour}
       strokeLinecap="round"
@@ -44,7 +44,7 @@ export const MuteIcon = ({ iconColour }: IconProps) => (
       strokeWidth="3px"
     />
     <path
-      d="M12.4,29.08l4.53,5.84a2.9,2.9,0,0,0,5.19-1.78V10.85a2.9,2.9,0,0,0-5.19-1.78l-4.51,5.81"
+      d="M 12.4 26.172 l 4.53 5.256 a 2.9 2.61 0 0 0 5.19 -1.602 V 9.765 a 2.9 2.61 0 0 0 -5.19 -1.602 l -4.51 5.229"
       fill="none"
       stroke={iconColour}
       strokeLinecap="round"

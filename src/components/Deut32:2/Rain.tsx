@@ -20,7 +20,7 @@ const Rain = ({ numberOfDrops = 25 }: RainProps) => {
         className={bem("verse")}
         style={{
           fontSize: `${Math.min(window.innerWidth, 500) / 100 / 3.4}em`,
-          lineHeight: `${Math.min(window.innerWidth, 500) / 1000}em`,
+          lineHeight: `${Math.min(window.innerWidth, 500) / 3000}em`,
         }}
       >
         <p>

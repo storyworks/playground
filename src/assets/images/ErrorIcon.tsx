@@ -7,7 +7,7 @@ interface IconProps {
 export const ErrorIcon = ({ iconColour }: IconProps) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
-    viewBox="0 0 44 55"
+    viewBox="0 0 44 44"
     x="0px"
     y="0px"
     width="100%"
@@ -22,7 +22,7 @@ export const ErrorIcon = ({ iconColour }: IconProps) => (
       stroke={iconColour}
       strokeLinecap="round"
       strokeLinejoin="round"
-      strokeWidth="3px"
+      strokeWidth="3.5px"
     />
     <line
       x1="11.75"
@@ -33,7 +33,7 @@ export const ErrorIcon = ({ iconColour }: IconProps) => (
       stroke={iconColour}
       strokeLinecap="round"
       strokeLinejoin="round"
-      strokeWidth="3px"
+      strokeWidth="3.5px"
     />
   </svg>
 );
