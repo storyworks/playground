@@ -40,7 +40,7 @@ const Application = () => {
       <div className={bem("grid")}>
         <h1 className={bem("heading")}>Playground</h1>
         {cards.map((card) => {
-          return <Card {...card} />;
+          return <Card key={card.id} {...card} />;
         })}
         <span className={bem("credits")}>
           Icons by Fengquan Li from the Noun Project

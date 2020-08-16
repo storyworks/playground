@@ -36,23 +36,25 @@ const Rain = ({ numberOfDrops = 25 }: RainProps) => {
           const randoHundo = Math.floor(Math.random() * (98 - 1 + 1) + 1);
           const randoFiver = Math.floor(Math.random() * (5 - 2 + 1) + 2);
           return (
-            <div
-              className={bem("drop")}
-              style={{
-                width: `${500 / numberOfDrops}px`,
-                bottom: `${randoFiver + randoFiver - 1 + 95}%`,
-                animationDelay: `0.${randoHundo}s`,
-                animationDuration: `0.9${randoHundo}s`,
-              }}
-            >
+            <>
               <div
-                className={bem("stem")}
+                className={bem("drop")}
                 style={{
+                  width: `${500 / numberOfDrops}px`,
+                  bottom: `${randoFiver + randoFiver - 1 + 95}%`,
                   animationDelay: `0.${randoHundo}s`,
-                  animationDuration: `0.9${randoHundo}s;`,
+                  animationDuration: `0.9${randoHundo}s`,
                 }}
-              />
-            </div>
+              >
+                <div
+                  className={bem("stem")}
+                  style={{
+                    animationDelay: `0.${randoHundo}s`,
+                    animationDuration: `0.9${randoHundo}s;`,
+                  }}
+                />
+              </div>
+            </>
           );
         })}
       </div>

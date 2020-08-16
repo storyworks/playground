@@ -3,12 +3,12 @@ import ReactPlayer from "react-player/youtube";
 
 import { createBem } from "~/bem";
 import "./Card.scss";
-import { BufferIcon, MuteIcon, VolumeIcon } from "~/assets/images";
+import { BufferIcon, MuteIcon, VolumeIcon, ErrorIcon } from "~/assets/images";
 
 interface CardProps {
   id: string;
   ref: React.RefObject<HTMLDivElement>;
-  audioId: string;
+  audioId?: string;
   iconColour?: string;
   content: React.ReactNode;
 }
@@ -34,22 +34,28 @@ const Card = ({
       onMouseLeave={() => setPlaying(false)}
       onClick={() => setPlaying(!playing)}
     >
-      <ReactPlayer
-        className={bem("audio")}
-        url={`https://www.youtube.com/watch?v=${audioId}`}
-        loop
-        playing={playing}
-        onBuffer={() => setAudioIcon("buffer")}
-        onPlay={() => setAudioIcon("playing")}
-        onPause={() => setAudioIcon("mute")}
-        width="0px"
-        height="0px"
-      />
-      <div className={bem("audioIcon")}>
-        {icon === "buffer" && <BufferIcon iconColour={iconColour} />}
-        {icon === "mute" && <MuteIcon iconColour={iconColour} />}
-        {icon === "playing" && <VolumeIcon iconColour={iconColour} />}
-      </div>
+      {audioId && (
+        <>
+          <ReactPlayer
+            className={bem("audio")}
+            url={`https://www.youtube.com/watch?v=${audioId}`}
+            loop
+            playing={playing}
+            onBuffer={() => setAudioIcon("buffer")}
+            onPlay={() => setAudioIcon("playing")}
+            onPause={() => setAudioIcon("mute")}
+            onError={() => setAudioIcon("error")}
+            width="0px"
+            height="0px"
+          />
+          <div className={bem("audioIcon")}>
+            {icon === "buffer" && <BufferIcon iconColour={iconColour} />}
+            {icon === "mute" && <MuteIcon iconColour={iconColour} />}
+            {icon === "playing" && <VolumeIcon iconColour={iconColour} />}
+            {icon === "error" && <ErrorIcon iconColour={iconColour} />}
+          </div>
+        </>
+      )}
       {content}
     </div>
   );
