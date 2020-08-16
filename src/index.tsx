@@ -23,6 +23,7 @@ const Application = () => {
       id: "Deut32:2",
       audioId: "Go4YMAws6BU",
       content: <Rain />,
+      caption: "Moses' song to the Israelites",
     },
     {
       id: "Deut32:3",
@@ -42,7 +43,8 @@ const Application = () => {
           return <Card key={card.id} {...card} />;
         })}
         <span className={bem("credits")}>
-          Icons by Fengquan Li from the Noun Project
+          Icons by Fengquan Li from the Noun Project. Photos from Unsplash,
+          credits in source.
         </span>
       </div>
       <span className={bem("dev")}>made by ziwei</span>

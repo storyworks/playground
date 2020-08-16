@@ -22,11 +22,17 @@
       padding: 0 0.2em;
     }
   }
+
   &__reference {
     display: flex;
     font-size: 0.6em;
     color: wheat;
     align-self: flex-end;
+  }
+
+  &__credit {
+    display: flex;
+    position: absolute;
   }
 
   &__rain {

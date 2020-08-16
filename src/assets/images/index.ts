@@ -1,4 +1,4 @@
-export { default as dew } from "./dew.jpeg";
+export { default as dew } from "./freestocks_EssPg6x5QeY.jpeg";
 export { BufferIcon } from "./BufferIcon";
 export { MuteIcon } from "./MuteIcon";
 export { VolumeIcon } from "./VolumeIcon";
