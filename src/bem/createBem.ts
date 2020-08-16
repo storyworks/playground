@@ -1,5 +1,5 @@
 interface BemModifierMap {
-  [key: string]: any;
+  [key: string]: any; // eslint-disable-line
 }
 
 type BemModifiers = string | string[] | number | BemModifierMap;
