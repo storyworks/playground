@@ -1,0 +1,91 @@
+.Rain {
+  display: flex;
+  justify-content: center;
+  width: inherit;
+  height: inherit;
+  overflow: hidden;
+
+  img {
+    width: auto;
+    height: 100%;
+  }
+
+  &__verse {
+    display: flex;
+    position: absolute;
+    flex-direction: column;
+    font-size: 1.5em;
+    line-height: 0.5em;
+    height: auto;
+    align-self: center;
+
+    span {
+      background-color: wheat;
+      height: 1em;
+      padding: 0 0.2em;
+    }
+  }
+  &__reference {
+    display: flex;
+    font-size: 0.6em;
+    color: wheat;
+    align-self: flex-end;
+  }
+
+  &__rain {
+    display: flex;
+    position: absolute;
+    width: 500px;
+    height: 500px;
+    z-index: 1;
+  }
+
+  &__drop {
+    display: flex;
+    justify-content: center;
+    height: 50px;
+    pointer-events: none;
+    animation: drop 0.9s linear infinite;
+  }
+
+  @keyframes drop {
+    0% {
+      transform: translateY(0vh);
+    }
+    75% {
+      transform: translateY(500px);
+    }
+    100% {
+      transform: translateY(600px);
+    }
+  }
+
+  &__stem {
+    width: 1px;
+    height: 70%;
+    background: linear-gradient(
+      to bottom,
+      rgba(255, 255, 255, 0),
+      rgba(255, 255, 255, 0.25)
+    );
+    animation: stem 0.9s linear infinite;
+  }
+
+  @keyframes stem {
+    0% {
+      opacity: 1;
+    }
+    25% {
+      opacity: 1;
+    }
+    65% {
+      opacity: 0;
+    }
+    75% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 0;
+    }
+  }
+}

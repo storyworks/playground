@@ -1,0 +1,1 @@
+export { isScrolledIntoView } from "./scrollIntoView";

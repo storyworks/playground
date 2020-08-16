@@ -11,6 +11,7 @@ module.exports = {
     "plugin:react/recommended",
     "plugin:react-hooks/recommended",
     "standard",
+    "prettier",
   ],
   globals: {
     Atomics: "readonly",
@@ -38,5 +39,6 @@ module.exports = {
     ],
     "comma-dangle": ["error", "only-multiline"],
     "react/no-unescaped-entities": ["error", { forbid: [">", "}"] }],
+    "@typescript-eslint/explicit-function-return-type": "off",
   },
 };

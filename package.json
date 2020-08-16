@@ -1,5 +1,5 @@
 {
-  "name": "project-template",
+  "name": "playground",
   "version": "1.0.0",
   "description": "",
   "author": "Ziwei Liu",
@@ -22,7 +22,8 @@
   },
   "dependencies": {
     "react": "^16.13.1",
-    "react-dom": "^16.13.1"
+    "react-dom": "^16.13.1",
+    "react-player": "^2.6.0"
   },
   "devDependencies": {
     "@babel/core": "^7.9.0",

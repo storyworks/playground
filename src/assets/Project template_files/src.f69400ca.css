@@ -1,0 +1,84 @@
+.Card {
+  display: flex;
+  width: 500px;
+  height: 500px;
+  margin: 0;
+  overflow: hidden;
+  background: linear-gradient(to bottom, #202020, #111119);
+  margin: 10px;
+}
+.Card img {
+  width: auto;
+  height: 100%;
+}
+.Card__rain {
+  position: absolute;
+  left: 0;
+  width: 500px;
+  height: 500px;
+  z-index: 2;
+}
+.Card__drop {
+  position: absolute;
+  bottom: 100%;
+  width: 15px;
+  height: 120px;
+  pointer-events: none;
+  animation: drop 0.9s linear infinite;
+}
+@keyframes drop {
+  0% {
+    transform: translateY(0vh);
+  }
+  75% {
+    transform: translateY(500px);
+  }
+  100% {
+    transform: translateY(600px);
+  }
+}
+.Card__stem {
+  width: 1px;
+  height: 60%;
+  margin-left: 7px;
+  background: linear-gradient(to bottom, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.25));
+  animation: stem 0.9s linear infinite;
+}
+@keyframes stem {
+  0% {
+    opacity: 1;
+  }
+  25% {
+    opacity: 1;
+  }
+  65% {
+    opacity: 0;
+  }
+  75% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+html,
+body,
+div#root {
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.App {
+  display: flex;
+}
+.App__grid {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+/*# sourceMappingURL=/src.f69400ca.css.map */

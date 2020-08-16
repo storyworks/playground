@@ -7,3 +7,42 @@ div#root {
   margin: 0;
   padding: 0;
 }
+
+.App {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: "Alata", sans-serif;
+
+  &__heading {
+    display: flex;
+    color: lightgrey;
+    // align-self: flex-start;
+  }
+
+  &__dev {
+    display: flex;
+    position: fixed;
+    align-self: flex-end;
+    bottom: 0px;
+    padding: 8px;
+    color: lightgrey;
+  }
+
+  &__credits {
+    display: flex;
+    font-size: 0.8em;
+    padding: 8px;
+    color: grey;
+  }
+
+  &__grid {
+    display: flex;
+    flex-wrap: wrap;
+    width: min-content;
+    // justify-content: center;
+    // grid-template-columns: 500px;
+    // grid-template-rows: 500px;
+    // gap: 20px;
+  }
+}
