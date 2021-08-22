@@ -2,7 +2,7 @@ import React from "react";
 import { render } from "react-dom";
 
 import { createBem } from "./bem";
-import Card, { Rain } from "./components/";
+import Card, { Rain, StarrySky } from "./components/";
 
 import "./assets/index.scss";
 
@@ -26,7 +26,13 @@ const Application = () => {
       caption: "Moses' song to the Israelites",
     },
     {
-      id: "Deut32:3",
+      id: "Psalm19:1",
+      audioId: "QsHowU57nic?t=112",
+      content: <StarrySky />,
+      caption: "A psalm of David",
+    },
+    {
+      id: "Deut32:4",
       content: <Placeholder />,
     },
     {

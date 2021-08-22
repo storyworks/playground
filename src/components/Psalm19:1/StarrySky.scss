@@ -1,0 +1,89 @@
+.StarrySky {
+  display: flex;
+  justify-content: center;
+  width: inherit;
+  height: inherit;
+  overflow: hidden;
+
+  &__background {
+    position: absolute;
+    width: 500px;
+    height: 500px;
+  }
+
+  &__overlay {
+    display: flex;
+    position: absolute;
+    z-index: 2;
+    width: 500px;
+    height: 500px;
+  }
+
+  &__verse {
+    display: flex;
+    position: absolute;
+    flex-direction: column;
+    align-self: center;
+    z-index: 11;
+
+    span {
+      color: #2f3052;
+      background-color: #bbbef5;
+      height: 1em;
+      padding: 0 0.2em;
+    }
+  }
+
+  &__top {
+    align-self: flex-start;
+  }
+
+  &__mid {
+    align-self: flex-start;
+  }
+
+  &__bottom {
+    align-self: flex-start;
+  }
+
+  &__reference {
+    display: flex;
+    z-index: 11;
+    font-size: 0.6em;
+    color: #bbbef5;
+    align-self: flex-end;
+  }
+
+  &__credit {
+    display: flex;
+    position: absolute;
+  }
+
+  &__stars {
+    display: flex;
+    position: absolute;
+    width: 500px;
+    height: 500px;
+    z-index: 1;
+    justify-content: space-evenly;
+  }
+
+  &__star {
+    display: flex;
+    background-color: white;
+    height: 70%;
+    animation: star 2s alternate infinite;
+  }
+
+  @keyframes star {
+    0% {
+      box-shadow: 0 0 1px 0px rgba(255, 255, 255, 0.5);
+    }
+    50% {
+      box-shadow: 0 0 1px 1px rgba(255, 255, 255, 1);
+    }
+    100% {
+      box-shadow: 0 0 1px 0px rgba(255, 255, 255, 0.5);
+    }
+  }
+}

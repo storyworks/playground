@@ -12,7 +12,7 @@ interface CardProps {
   audioId?: string;
   iconColour?: string;
   content: React.ReactNode;
-  caption: string;
+  caption?: string;
 }
 
 const bem = createBem("Card");
