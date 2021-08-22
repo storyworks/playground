@@ -42,7 +42,7 @@ const Card = ({
       <div
         className={bem("content", playing ? "active" : "")}
         style={{
-          height: Math.min(window.innerWidth * 0.9, 500),
+          height: Math.min(window.innerWidth * 0.85, 500),
         }}
       >
         {audioId && (

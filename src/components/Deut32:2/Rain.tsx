@@ -13,14 +13,15 @@ const bem = createBem("Rain");
 
 const Rain = ({ numberOfDrops = 25 }: RainProps) => {
   const array = new Array(numberOfDrops).fill(0);
+  const width = Math.min(window.innerWidth * 0.85, 500);
 
   return (
     <div className={bem()}>
       <div
         className={bem("verse")}
         style={{
-          fontSize: `${Math.min(window.innerWidth, 500) / 100 / 3.4}em`,
-          lineHeight: `${Math.min(window.innerWidth, 500) / 3000}em`,
+          fontSize: `${width / 100 / 3.4}em`,
+          lineHeight: `${width / 3000}em`,
         }}
       >
         <p>
@@ -46,7 +47,7 @@ const Rain = ({ numberOfDrops = 25 }: RainProps) => {
               <div
                 className={bem("drop")}
                 style={{
-                  width: `${500 / numberOfDrops}px`,
+                  width: `${width / numberOfDrops}px`,
                   bottom: `${randoFiver + randoFiver - 1 + 95}%`,
                   animationDelay: `0.${randoHundo}s`,
                   animationDuration: `0.9${randoHundo}s`,

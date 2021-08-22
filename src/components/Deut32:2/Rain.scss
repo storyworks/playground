@@ -38,8 +38,8 @@
   &__rain {
     display: flex;
     position: absolute;
-    width: 500px;
-    height: 500px;
+    width: inherit;
+    height: inherit;
     z-index: 1;
   }
 
@@ -56,10 +56,10 @@
       transform: translateY(0vh);
     }
     75% {
-      transform: translateY(500px);
+      transform: translateY(400px);
     }
     100% {
-      transform: translateY(600px);
+      transform: translateY(550px);
     }
   }
 

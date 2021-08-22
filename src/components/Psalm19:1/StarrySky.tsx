@@ -53,7 +53,14 @@ const StarrySky = ({ numberOfStars = 40 }: StarrySkyProps) => {
           );
         })}
       </div>
-      <img src={forest} alt="forest" className={bem("overlay")} />
+      <img
+        src={forest}
+        alt="forest"
+        className={bem("overlay")}
+        style={{
+          height: Math.min(window.innerWidth * 0.85, 500),
+        }}
+      />
       <img src={starrySky} alt="starry sky" className={bem("background")} />
     </div>
   );
